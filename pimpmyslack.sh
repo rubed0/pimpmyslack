@@ -9,7 +9,8 @@ installpkg slackpkg+-1.8.0-noarch-7mt.txz
 SLACKVER=15.0
 cd /root
 mkdir multilib
-lftp -c "open http://baar.alienbase.nl/mirrors/people/alien/multilib/ ; mirror -c -e ${SLACKVER}"
+cd multilib
+lftp -c "open http://slackware.com/~alien/multilib/ ; mirror -c -e ${SLACKVER}"
 cd ${SLACKVER}
 upgradepkg --reinstall --install-new *.t?z
 upgradepkg --install-new slackware64-compat32/*-compat32/*.t?z
