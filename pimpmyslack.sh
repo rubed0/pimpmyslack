@@ -6,7 +6,7 @@ wget https://sourceforge.net/projects/slackpkgplus/files/slackpkg%2B-1.8.0-noarc
 installpkg slackpkg+-1.8.0-noarch-7mt.txz
 
 # setup multilib
-SLACKVER=15.0
+SLACKVER="current"
 cd /root
 mkdir multilib
 cd multilib
